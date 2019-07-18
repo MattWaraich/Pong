@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Pong</title>
-	</head>
-	<body>
-		<div class="game-wrapper">
-			<h1>Pong!</h1>
-			<div id="game"></div>
-			<!-- Rough-out your SVG mark-up here to start... -->
+
+<head>
+	<meta charset="UTF-8">
+	<title>Pong</title>
+</head>
+
+<body>
+	<div class="game-wrapper">
+		<h1>Pong!</h1>
+		<div id="game"></div>
+		<!-- Rough-out your SVG mark-up here to start... -->
+		<div id="pong-board">
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0  512 256" width="600" height="200">
+				<!-- Board -->
+				<rect x="0" y="0" width="512" height="256" fill="353535" />
+				<!-- Paddle -->
+				<rect x="502" y="60" width="8" height="56" fill="white" rx="0" stroke-width="0">
+				</rect>
+				<!-- Paddle -->
+				<rect x="0" y="150" width="8" height="56" fill="white" rx="0" stroke-width="0">
+				</rect>
+				<!-- Mid Line -->
+				<line stroke-dasharray="20, 15" x1="257git " y1="0" x2="257" y2="256" stroke="white" stroke-width="4" />
+				<!-- Ball -->
+				<circle id="ball" r="8" cx="256" cy="128" fill="white" />
+			</svg>
 		</div>
-		<script type="text/javascript" src="./src/index.js"></script>
-	</body>
+	</div>
+	<script type="text/javascript" src="./src/index.js"></script>
+</body>
+
 </html>
