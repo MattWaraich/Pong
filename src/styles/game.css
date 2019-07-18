@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  background: linear-gradient(0. .50 turn, green, blue, yellow);
 }
 ol, ul {
 	list-style: none;
