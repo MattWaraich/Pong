@@ -1,0 +1,38 @@
+rotating paddles that spin
+two paddles per side 
+multiple balls
+every time a player hits it the other paddle gets smaller 
+
+
+moving background:
+-set game board color to transparent 
+-image splash for continuous loop so it looks like its moving 
+
+let playerColor = player2.color;
+player2.color = 'red'; 
+//change the color 
+setTimeout(function(){
+//reset the color 
+player2.color = playerColor;
+}. 200);
+
+//game.js
+if(this.megaBall)
+
+this.megaball - 'false' 
+this.megaball = []
+
+document.addEventListener 
+
+case 'm'
+this.spawn megaball
+ 
+ (end of constructor )
+
+spawn megaball(){
+    tjos.megaball=true 
+}
+
+
+
+svg cl
