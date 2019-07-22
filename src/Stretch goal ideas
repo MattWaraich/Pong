@@ -35,4 +35,13 @@ spawn megaball(){
 
 
 
-svg cl
+.space-scroller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 563px;
+  width: 100%;
+  background-image: url("http://testinggrounds.info/game-art/space.jpg");
+  background-repeat: repear-x;
+  animation: spaceScroller 10s linear infinite;
+}

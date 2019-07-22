@@ -1,10 +1,7 @@
 import { SVG_NS } from "../settings";
 
 export default class Board {
-  constructor(
-    width,
-    height // could add color here to add more parameters then fill it out in the render
-  ) {
+  constructor(width, height) {
     this.width = width;
     this.height = height;
   }

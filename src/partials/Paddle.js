@@ -23,7 +23,6 @@ export default class Paddle {
     this.playerColor = "red";
     this.upKey = upKey;
     this.downKey = downKey;
-    // collision speed for stretch goal by doing this.speed +=
     this.keyState = {};
 
     document.addEventListener("keydown", event => {
@@ -85,5 +84,3 @@ export default class Paddle {
     svg.appendChild(rect);
   }
 }
-
-//stretch goal adding 1 more player on each side -> make paddles different colors.. one slightly smaller than the other

@@ -20,7 +20,7 @@ export default class Ball {
     this.vy = 0;
 
     while (this.vy === 0) {
-      this.vy = Math.floor(Math.random() * 10 - 5); //can remove math.floor to allow decimal places and play with it
+      this.vy = Math.floor(Math.random() * 10 - 5);
     }
     console.log(this.vy);
     this.vx = this.direction * (6 - Math.abs(this.vy));
@@ -34,20 +34,13 @@ export default class Ball {
     const hitBottom = this.y + this.radius >= this.boardHeight;
 
     if (hitLeft || hitRight) {
-      //this.vx = -this.vx; this one seems harder to understand
       this.vx *= -1;
     } else if (hitTop || hitBottom) {
       this.vy *= -1;
-      //can mess with these numbers to change speed etc.
     }
   }
 
   paddleCollision(player1, player2) {
-    // moving right
-
-    // console.log("player1", player1);
-    // console.log("player2", player2);
-
     if (this.vx > 0) {
       // collision detection for right paddle
       if (

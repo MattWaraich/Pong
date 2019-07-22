@@ -6,5 +6,5 @@ const game = new Game("game", 900, 400);
 
 (function gameLoop() {
   game.render();
-  requestAnimationFrame(gameLoop); //if you comment this out it will only run once instead of appending - pauses game loop
+  requestAnimationFrame(gameLoop);
 })();
